@@ -1,0 +1,43 @@
+{
+  "manifest_version": 2,
+  "name": "arb-show by daager",
+  "author": "Касымов Нурлан a.k.a. daager",
+  "description": "Расширение показывает наличие арбитражной ситуации",
+  "version": "0.1.4",
+  "permissions": [
+    "storage",
+    "tabs",
+    "declarativeContent",
+    "https://*.tinkoff.ru/*"
+  ],
+  "externally_connectable": {
+    "matches": [
+      "https://*.tinkoff.ru/*"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.tinkoff.ru/terminal*"
+      ],
+      "js": [
+        "js/index.js"
+      ],
+      "css": [
+        "css/style.css"
+      ]
+    }
+  ],
+  "icons": {
+    "64": "icons/64.png",
+    "256": "icons/256.png",
+    "512": "icons/512.png"
+  },
+  "browser_action": {
+    "default_title": "Во славу Лосефермы!"
+  },
+  "background" : {
+    "scripts": ["js/bg.js"],
+    "persistent": false
+  }
+}

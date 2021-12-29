@@ -1,0 +1,43 @@
+div.arb-show{
+    background: white;
+    color: black;
+    position: fixed;
+    top: 40%;
+    left: 0px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #333;
+    display: flex;
+    align-items: stretch;
+    z-index: 9999;
+}
+
+div.arb-show-ok{
+    background: springgreen;
+}
+
+div.arb-show-error{
+    color: white;
+    background: indianred;
+    padding: 5px 10px;
+}
+
+div#as-prices-block tr td:first-child{
+    text-align: right;
+    font-weight: bolder;
+}
+div#as-prices-block tr td:last-child{
+    text-align: right;
+}
+div#as-ticker-block{
+    background:#dddddd;
+    border-right: 1px solid #333;
+    display: flex;
+    align-items: center;
+    width: 20px;
+    justify-content: center;
+}
+div#as-ticker-block span{
+    transform: rotate(-90deg);
+    position: absolute;
+}
